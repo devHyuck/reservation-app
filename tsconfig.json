@@ -1,13 +1,13 @@
 {
 	"compilerOptions": {
-		"target": "ES6",
+		"target": "es5",
+		"module": "commonjs",
+		"lib": ["dom", "es2017"],
 		"useDefineForClassFields": true,
-		"lib": ["ES6", "DOM", "DOM.Iterable", "ScriptHost"],
-		"module": "ESNext",
 		"skipLibCheck": true,
 
 		/* Bundler mode */
-		"moduleResolution": "bundler",
+		"moduleResolution": "node",
 		"allowImportingTsExtensions": true,
 		"resolveJsonModule": true,
 		"isolatedModules": true,
@@ -18,7 +18,15 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
+		"noFallthroughCasesInSwitch": true,
+
+		/* Additional options */
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["*"]
+		}
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
