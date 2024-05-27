@@ -1,11 +1,11 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import App from "./App";
-import Reservations from "./pages/Reservations";
-import ReservationDetail from "./pages/ReservationDetail";
-import CompletedReservations from "./pages/CompletedReservations";
-import MenuList from "./pages/MenuList";
-import { reservationLoader } from "./loaders/ReservationLoder";
-import { MenuLoader } from "./loaders/MenuLoader";
+import App from "@/App";
+import Reservations from "@/pages/Reservations";
+import ReservationDetail from "@/pages/ReservationDetail";
+import CompletedReservations from "@/pages/CompletedReservations";
+import MenuList from "@/pages/MenuList";
+import { reservationLoader } from "@/loaders/ReservationLoder";
+import { MenuLoader } from "@/loaders/MenuLoader";
 
 const router = createBrowserRouter([
 	{

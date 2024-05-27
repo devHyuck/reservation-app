@@ -1,7 +1,7 @@
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { RiTimelineView } from "react-icons/ri";
 import styled from "styled-components";
-import NavMenu from "../common/NavMenu";
+import NavMenu from "@/components/common/NavMenu";
 
 const NavBar = styled.nav`
 	position: fixed;

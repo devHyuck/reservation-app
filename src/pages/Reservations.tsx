@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
-import useReservationsStore, { ReservationsByDate } from "../store/reservationsStore";
-import ReservationsSummary from "../components/common/ReservationsSummary";
+import useReservationsStore, { ReservationsByDate } from "@/store/reservationsStore";
+import ReservationsSummary from "@/components/common/ReservationsSummary";
 import styled from "styled-components";
 import { useEffect } from "react";
 
