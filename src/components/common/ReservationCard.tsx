@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 interface ReservationCardProps {
 	reservation: Reservation;
-	date?: string; // 날짜를 포함할 수 있도록 추가
+	date?: string;
 	handleComplete: (id: string) => void;
-	state: string; // 예약 상태를 나타내는 prop 추가
+	state: string;
 }
 
 const StyledCard = styled.li`
