@@ -1,9 +1,11 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Reservations from "./pages/Reservations";
-import { reservationLoader } from "./loaders/ReservationLoder";
 import ReservationDetail from "./pages/ReservationDetail";
 import CompletedReservations from "./pages/CompletedReservations";
+import MenuList from "./pages/MenuList";
+import { reservationLoader } from "./loaders/ReservationLoder";
+import { MenuLoader } from "./loaders/MenuLoader";
 
 const router = createBrowserRouter([
 	{
@@ -28,6 +30,25 @@ const router = createBrowserRouter([
 				element: <CompletedReservations />,
 			},
 		],
+	},
+	{
+		path: "/menu",
+		element: <App />,
+		children: [
+			{
+				path: "",
+				element: <MenuList />,
+				loader: MenuLoader,
+			},
+		],
+	},
+	{
+		path: "/search",
+		element: <App />, // 검색 페이지 컴포넌트를 여기에 추가하세요.
+	},
+	{
+		path: "/setting",
+		element: <App />, // 설정 페이지 컴포넌트를 여기에 추가하세요.
 	},
 ]);
 

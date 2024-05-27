@@ -36,9 +36,9 @@ const NavMenuList = styled.ul`
 const MainNav: React.FC = () => {
 	const navMenuItems = [
 		{ icon: <RiTimelineView size={24} />, text: "예약관리", link: "/" },
-		{ icon: <BiSolidFoodMenu size={24} />, text: "메뉴관리", link: "/" },
-		{ icon: <FaSearch size={24} />, text: "검색", link: "/" },
-		{ icon: <IoSettingsSharp size={24} />, text: "설정", link: "/" },
+		{ icon: <BiSolidFoodMenu size={24} />, text: "메뉴관리", link: "/menu" },
+		{ icon: <FaSearch size={24} />, text: "검색", link: "/search" },
+		{ icon: <IoSettingsSharp size={24} />, text: "설정", link: "/setting" },
 	];
 
 	return (
