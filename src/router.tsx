@@ -42,14 +42,6 @@ const router = createBrowserRouter([
 			},
 		],
 	},
-	{
-		path: "/search",
-		element: <App />, // 검색 페이지 컴포넌트를 여기에 추가하세요.
-	},
-	{
-		path: "/setting",
-		element: <App />, // 설정 페이지 컴포넌트를 여기에 추가하세요.
-	},
 ]);
 
 export default router;
