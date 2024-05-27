@@ -6,6 +6,12 @@ const ReservationsList = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 16px;
+
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
 `;
 
 const CompletedReservations = () => {
