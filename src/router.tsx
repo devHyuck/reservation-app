@@ -1,10 +1,33 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "./App";
+import Reservations from "./pages/Reservations";
+import { reservationLoader } from "./loaders/ReservationLoder";
+import ReservationDetail from "./pages/ReservationDetail";
+import CompletedReservations from "./pages/CompletedReservations";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
+		element: <Navigate to='/reservations' />, // 기본 경로로 들어왔을 때 리다이렉트
+	},
+	{
+		path: "/reservations",
 		element: <App />,
+		children: [
+			{
+				path: "",
+				element: <Reservations />,
+				loader: reservationLoader,
+			},
+			{
+				path: ":date",
+				element: <ReservationDetail />,
+			},
+			{
+				path: "completed",
+				element: <CompletedReservations />,
+			},
+		],
 	},
 ]);
 

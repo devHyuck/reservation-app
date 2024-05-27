@@ -27,6 +27,8 @@ const GlobalStyle = createGlobalStyle`
 	dl,
 	dd {
 		margin-block-end: 0;
+		font-size: inherit;
+		font-weight: inherit;
 	}
 
 	ul,
